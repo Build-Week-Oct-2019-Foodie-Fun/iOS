@@ -14,13 +14,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FoodieFun" translatesAutoresizingMaskIntoConstraints="NO" id="hdu-RO-Cus">
+                                <rect key="frame" x="20" y="369.5" width="374" height="157"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19215686269999999" green="0.18823529410000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hdu-RO-Cus" secondAttribute="trailing" constant="20" id="chm-77-iiO"/>
+                            <constraint firstItem="hdu-RO-Cus" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hnK-io-rbi"/>
+                            <constraint firstItem="hdu-RO-Cus" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="m6L-pK-2Ej"/>
+                            <constraint firstItem="hdu-RO-Cus" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="yr4-dF-EU3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="image" destination="hdu-RO-Cus" id="gjs-7x-GQZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FoodieFun" width="913" height="157"/>
+    </resources>
 </document>

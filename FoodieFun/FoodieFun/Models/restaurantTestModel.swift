@@ -8,18 +8,18 @@
 
 import UIKit
 
-struct Restaurant {
-    
-    var name: String
-    var image: UIImage
-    var foodItem: String
-    
-    init(name: String, imageName: String, foodItem: String) {
-        self.name = name
-        self.image = UIImage(named: imageName)!
-        self.foodItem = foodItem
-    }
-        
+//struct Restaurant {
+//    
+//    var name: String
+//    var image: UIImage
+//    var foodItem: String
+//    
+//    init(name: String, imageName: String, foodItem: String) {
+//        self.name = name
+//        self.image = UIImage(named: imageName)!
+//        self.foodItem = foodItem
+//    }
+//        
     
     
 //    struct Items {
@@ -63,4 +63,4 @@ struct Restaurant {
 //            let name: String
 //        }
 //    }
-}
+

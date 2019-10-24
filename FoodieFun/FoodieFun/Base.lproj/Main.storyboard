@@ -24,23 +24,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="WelcomePageViewController" customModule="FoodieFun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FoodieFun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqk-Ua-FOv">
-                                <rect key="frame" x="69" y="156" width="275" height="50"/>
+                                <rect key="frame" x="69" y="200" width="275" height="50"/>
                                 <fontDescription key="fontDescription" name="JosefinSans-Bold" family="Josefin Sans" pointSize="50"/>
                                 <color key="textColor" red="1" green="0.8666666666666667" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A place for Foodies to share and rate their favorite spots, dishes and overall dining experience" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qZ-ms-f9A">
-                                <rect key="frame" x="20" y="222" width="374" height="90"/>
+                                <rect key="frame" x="20" y="266" width="374" height="90"/>
                                 <fontDescription key="fontDescription" name="Lato-Italic" family="Lato" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.99215686274509807" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cji-9v-Mqb">
-                                <rect key="frame" x="20" y="497" width="374" height="42"/>
+                                <rect key="frame" x="20" y="541" width="374" height="42"/>
                                 <color key="backgroundColor" red="1" green="0.86666666670000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="25"/>
                                 <state key="normal" title="Sign In">
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRZ-GC-p72">
-                                <rect key="frame" x="20" y="555" width="374" height="42"/>
+                                <rect key="frame" x="20" y="599" width="374" height="42"/>
                                 <color key="backgroundColor" red="0.19215686269999999" green="0.18823529410000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="25"/>
                                 <state key="normal" title="Create Account">
@@ -79,6 +79,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gSV-1N-Oz3"/>
+                    <connections>
+                        <outlet property="createAccount" destination="pRZ-GC-p72" id="o2f-TY-D2w"/>
+                        <outlet property="signIn" destination="cji-9v-Mqb" id="ygN-v9-BQE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,17 +94,17 @@
             <objects>
                 <viewController id="TZ2-I5-qSH" customClass="SearchHomeViewController" customModule="FoodieFun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XZ0-E5-MfA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended Near You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0z-Qw-b5P">
-                                <rect key="frame" x="20" y="216" width="374" height="30"/>
+                                <rect key="frame" x="20" y="172" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.99215686274509807" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" placeholder="Search For A Restaurant" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62s-6C-PpO">
-                                <rect key="frame" x="20" y="144" width="374" height="56"/>
+                                <rect key="frame" x="20" y="100" width="374" height="56"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="organization"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U10-Vz-CVM">
@@ -186,8 +191,9 @@
                         <viewLayoutGuide key="safeArea" id="JkO-hF-6Et"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="ewH-MN-fEO"/>
+                    <navigationItem key="navigationItem" id="3DZ-En-iY7"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginIn" id="URC-S5-NOv"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="LoginIn" modalPresentationStyle="fullScreen" id="URC-S5-NOv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3i-Iv-upB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -310,6 +316,10 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.19215686269999999" green="0.18823529410000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="Ob4-4v-uXU" eventType="touchUpInside" id="3eL-fQ-NbD"/>
+                                    <segue destination="TZ2-I5-qSH" kind="show" identifier="SignInToSearchHomeVC" id="DrC-zf-meS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ds-iu-6rG">
                                 <rect key="frame" x="110" y="672" width="195" height="30"/>
@@ -345,6 +355,11 @@
                         <viewLayoutGuide key="safeArea" id="FLk-Mu-pua"/>
                     </view>
                     <navigationItem key="navigationItem" id="PnV-Fc-RN5"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="UGU-Qb-Yal" id="K7K-P0-U1J"/>
+                        <outlet property="passwordTextField" destination="aKG-M7-iXl" id="bzj-46-ML1"/>
+                        <outlet property="signIn" destination="xDq-0h-0gY" id="F5s-FL-dvO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3co-66-ZGz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -404,6 +419,10 @@
                                 <state key="normal" title="Create">
                                     <color key="titleColor" red="0.19215686269999999" green="0.18823529410000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createTapped:" destination="SfX-uv-2Bs" eventType="touchUpInside" id="KL7-Se-p69"/>
+                                    <segue destination="TZ2-I5-qSH" kind="show" identifier="CreateAccountToSearchHomeVC" id="FNo-Pd-fWg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19215686269999999" green="0.18823529410000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -436,6 +455,12 @@
                         <viewLayoutGuide key="safeArea" id="Pxb-7N-RIP"/>
                     </view>
                     <navigationItem key="navigationItem" id="TcX-Lf-EC7"/>
+                    <connections>
+                        <outlet property="create" destination="PTW-Z9-fV2" id="XYl-RF-0RD"/>
+                        <outlet property="emailTextField" destination="az8-zW-fMQ" id="bM8-Nu-1X1"/>
+                        <outlet property="nameTextField" destination="KvA-5W-sBL" id="ur4-BX-jFq"/>
+                        <outlet property="passwordTextField" destination="ffY-QE-dOw" id="nJS-Lt-u4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g6f-ed-F6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -455,21 +480,21 @@
                                 <color key="textColor" red="1" green="0.99215686274509807" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="83k-Ee-beO">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="83k-Ee-beO">
                                 <rect key="frame" x="20" y="172" width="76" height="18.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SadFace" translatesAutoresizingMaskIntoConstraints="NO" id="I0l-ju-HIc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SadFace" translatesAutoresizingMaskIntoConstraints="NO" id="I0l-ju-HIc">
                                         <rect key="frame" x="0.0" y="0.0" width="18.5" height="18.5"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NeutralFace" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-rV-KQD">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="NeutralFace" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-rV-KQD">
                                         <rect key="frame" x="28.5" y="0.0" width="19" height="18.5"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HappyFace" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-89-vHj">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="HappyFace" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-89-vHj">
                                         <rect key="frame" x="57.5" y="0.0" width="18.5" height="18.5"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="86 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bo-aY-5Sv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="86 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bo-aY-5Sv">
                                 <rect key="frame" x="116" y="172" width="85.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.99215686270000003" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -857,4 +882,7 @@
         <image name="person.fill" catalog="system" width="64" height="60"/>
         <image name="sad" width="120" height="120"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DrC-zf-meS"/>
+    </inferredMetricsTieBreakers>
 </document>

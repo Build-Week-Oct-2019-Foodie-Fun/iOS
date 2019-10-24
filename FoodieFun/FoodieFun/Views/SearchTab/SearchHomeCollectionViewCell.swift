@@ -14,20 +14,20 @@ class SearchHomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var foodTitle: UILabel!
     @IBOutlet weak var restaurantTitle: UILabel!
     
-    var restaurant: Restaurant? {
-        didSet {
-            updateViews()
-        }
+//    var restaurant: Restaurant? {
+//        didSet {
+//            updateViews()
+//        }
+//    }
+//    
+//    private func updateViews() {
+//        guard let restaurant = restaurant else { return }
+//        
+//        foodImage.image = restaurant.image
+//        foodTitle.text = restaurant.foodItem
+//        restaurantTitle.text = restaurant.name
+        
     }
     
-    private func updateViews() {
-        guard let restaurant = restaurant else { return }
-        
-        foodImage.image = restaurant.image
-        foodTitle.text = restaurant.foodItem
-        restaurantTitle.text = restaurant.name
-        
-    }
     
-    
-}
+

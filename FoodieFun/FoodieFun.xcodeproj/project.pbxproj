@@ -35,6 +35,15 @@
 		809BFD452360B6E30031BAC8 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD442360B6E30031BAC8 /* ProfileTableViewCell.swift */; };
 		809BFD482360C6D50031BAC8 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD472360C6D50031BAC8 /* Bearer.swift */; };
 		809BFD4A23613CC30031BAC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 809BFD4923613CC30031BAC8 /* GoogleService-Info.plist */; };
+		809BFD4C236164770031BAC8 /* FoodieRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD4B236164770031BAC8 /* FoodieRepresentation.swift */; };
+		809BFD4E236165190031BAC8 /* RestaurantRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD4D236165190031BAC8 /* RestaurantRepresentation.swift */; };
+		809BFD50236165980031BAC8 /* ReviewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD4F236165980031BAC8 /* ReviewRepresentation.swift */; };
+		809BFD522361663B0031BAC8 /* Foodie+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD512361663B0031BAC8 /* Foodie+Convenience.swift */; };
+		809BFD54236169DA0031BAC8 /* Restaurant+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD53236169DA0031BAC8 /* Restaurant+Convenience.swift */; };
+		809BFD56236169E70031BAC8 /* Review+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD55236169E70031BAC8 /* Review+Convenience.swift */; };
+		809BFD582361FE870031BAC8 /* FoodieController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD572361FE870031BAC8 /* FoodieController.swift */; };
+		809BFD5A2361FE920031BAC8 /* ReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD592361FE920031BAC8 /* ReviewController.swift */; };
+		809BFD5C2361FEB90031BAC8 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD5B2361FEB90031BAC8 /* RestaurantController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +78,15 @@
 		809BFD442360B6E30031BAC8 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		809BFD472360C6D50031BAC8 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 		809BFD4923613CC30031BAC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		809BFD4B236164770031BAC8 /* FoodieRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieRepresentation.swift; sourceTree = "<group>"; };
+		809BFD4D236165190031BAC8 /* RestaurantRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRepresentation.swift; sourceTree = "<group>"; };
+		809BFD4F236165980031BAC8 /* ReviewRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRepresentation.swift; sourceTree = "<group>"; };
+		809BFD512361663B0031BAC8 /* Foodie+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foodie+Convenience.swift"; sourceTree = "<group>"; };
+		809BFD53236169DA0031BAC8 /* Restaurant+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Restaurant+Convenience.swift"; sourceTree = "<group>"; };
+		809BFD55236169E70031BAC8 /* Review+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+Convenience.swift"; sourceTree = "<group>"; };
+		809BFD572361FE870031BAC8 /* FoodieController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieController.swift; sourceTree = "<group>"; };
+		809BFD592361FE920031BAC8 /* ReviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewController.swift; sourceTree = "<group>"; };
+		809BFD5B2361FEB90031BAC8 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
 		A541A0CB9F3CA0FAC9E210AB /* Pods-FoodieFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodieFun.release.xcconfig"; path = "Target Support Files/Pods-FoodieFun/Pods-FoodieFun.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +108,6 @@
 				318E2CC1152A8D99131AE4D8 /* Pods-FoodieFun.debug.xcconfig */,
 				A541A0CB9F3CA0FAC9E210AB /* Pods-FoodieFun.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				8043D5E9235F5F5600CDADD6 /* Foodie.xcdatamodeld */,
+				809BFD4B236164770031BAC8 /* FoodieRepresentation.swift */,
+				809BFD512361663B0031BAC8 /* Foodie+Convenience.swift */,
 			);
 			path = "Foodie Model";
 			sourceTree = "<group>";
@@ -168,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				8043D5EE235F5F8A00CDADD6 /* Restaurant.xcdatamodeld */,
+				809BFD4D236165190031BAC8 /* RestaurantRepresentation.swift */,
+				809BFD53236169DA0031BAC8 /* Restaurant+Convenience.swift */,
 			);
 			path = "Restaurant Model";
 			sourceTree = "<group>";
@@ -176,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				8043D5F2235F5F9E00CDADD6 /* Review.xcdatamodeld */,
+				809BFD4F236165980031BAC8 /* ReviewRepresentation.swift */,
+				809BFD55236169E70031BAC8 /* Review+Convenience.swift */,
 			);
 			path = "Review Model";
 			sourceTree = "<group>";
@@ -231,6 +254,9 @@
 			isa = PBXGroup;
 			children = (
 				8043D60B235FA69E00CDADD6 /* restaurantModelControllerTest.swift */,
+				809BFD572361FE870031BAC8 /* FoodieController.swift */,
+				809BFD5B2361FEB90031BAC8 /* RestaurantController.swift */,
+				809BFD592361FE920031BAC8 /* ReviewController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -384,7 +410,14 @@
 				8043D56C235E1B0300CDADD6 /* WelcomePageViewController.swift in Sources */,
 				809BFD482360C6D50031BAC8 /* Bearer.swift in Sources */,
 				8043D60A235FA5C000CDADD6 /* restaurantTestModel.swift in Sources */,
+				809BFD54236169DA0031BAC8 /* Restaurant+Convenience.swift in Sources */,
+				809BFD56236169E70031BAC8 /* Review+Convenience.swift in Sources */,
+				809BFD582361FE870031BAC8 /* FoodieController.swift in Sources */,
 				8043D5EB235F5F5600CDADD6 /* Foodie.xcdatamodeld in Sources */,
+				809BFD5C2361FEB90031BAC8 /* RestaurantController.swift in Sources */,
+				809BFD4E236165190031BAC8 /* RestaurantRepresentation.swift in Sources */,
+				809BFD50236165980031BAC8 /* ReviewRepresentation.swift in Sources */,
+				809BFD522361663B0031BAC8 /* Foodie+Convenience.swift in Sources */,
 				8043D5F0235F5F8A00CDADD6 /* Restaurant.xcdatamodeld in Sources */,
 				8043D5FB235F69C800CDADD6 /* SignInViewController.swift in Sources */,
 				809BFD422360B6BF0031BAC8 /* ProfileViewController.swift in Sources */,
@@ -395,9 +428,11 @@
 				809BFD452360B6E30031BAC8 /* ProfileTableViewCell.swift in Sources */,
 				8043D608235F8F3A00CDADD6 /* RestaurantProfileTableViewCell.swift in Sources */,
 				8043D5FF235F89B400CDADD6 /* SearchHomeViewController.swift in Sources */,
+				809BFD5A2361FE920031BAC8 /* ReviewController.swift in Sources */,
 				8043D606235F8F0C00CDADD6 /* RestaurantProfileViewController.swift in Sources */,
 				8043D568235E1B0300CDADD6 /* AppDelegate.swift in Sources */,
 				8043D56A235E1B0300CDADD6 /* SceneDelegate.swift in Sources */,
+				809BFD4C236164770031BAC8 /* FoodieRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

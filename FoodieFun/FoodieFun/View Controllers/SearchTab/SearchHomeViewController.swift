@@ -11,17 +11,18 @@ import UIKit
 class SearchHomeViewController: UIViewController {
     
     // MARK: - Properties
-    let restaurantControllerTest = RestaurantControllerTest()
+    let foodieController = FoodieController()
+    //let restaurantControllerTest = RestaurantControllerTest()
     
     // MARK: - View Life Cycle
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        if restaurantControllerTest.bearer == nil {
-//            performSegue(withIdentifier: "SignInModalSegue", sender: self)
-//        } else {
-//            
-//        }
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if foodieController.bearer == nil {
+            performSegue(withIdentifier: "LoginIn", sender: self)
+        } else {
+
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,14 +37,15 @@ extension SearchHomeViewController: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        restaurantControllerTest.restaurants.count
+        //restaurantControllerTest.restaurants.count
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendedRestaurant", for: indexPath) as? SearchHomeCollectionViewCell else { return UICollectionViewCell() }
         
-        let restaurant = restaurantControllerTest.restaurants[indexPath.item]
-        cell.restaurant = restaurant
+        //let restaurant = restaurantControllerTest.restaurants[indexPath.item]
+        //cell.restaurant = restaurant
         return cell
     }
     
