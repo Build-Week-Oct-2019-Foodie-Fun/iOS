@@ -3,31 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CAC777DB10F60C15A101FBE /* Pods_FoodieFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DEF802B190D578642FE1B5 /* Pods_FoodieFun.framework */; };
 		8043D568235E1B0300CDADD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D567235E1B0300CDADD6 /* AppDelegate.swift */; };
 		8043D56A235E1B0300CDADD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D569235E1B0300CDADD6 /* SceneDelegate.swift */; };
-		8043D56C235E1B0300CDADD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D56B235E1B0300CDADD6 /* ViewController.swift */; };
+		8043D56C235E1B0300CDADD6 /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D56B235E1B0300CDADD6 /* WelcomePageViewController.swift */; };
 		8043D56F235E1B0300CDADD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043D56D235E1B0300CDADD6 /* Main.storyboard */; };
-		8043D571235E1B0500CDADD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043D570235E1B0500CDADD6 /* Assets.xcassets */; };
 		8043D574235E1B0500CDADD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043D572235E1B0500CDADD6 /* LaunchScreen.storyboard */; };
 		8043D5DF235E2EDE00CDADD6 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8043D5D9235E2EBB00CDADD6 /* Lato-Bold.ttf */; };
 		8043D5E0235E2EE100CDADD6 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8043D5D6235E2EBA00CDADD6 /* Lato-Italic.ttf */; };
 		8043D5E1235E2EE400CDADD6 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8043D5D5235E2EBA00CDADD6 /* Lato-Light.ttf */; };
 		8043D5E2235E2EE600CDADD6 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8043D5D7235E2EBB00CDADD6 /* Lato-Regular.ttf */; };
 		8043D5E3235E2EE900CDADD6 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8043D5D8235E2EBB00CDADD6 /* JosefinSans-Bold.ttf */; };
-		8043D5E8235E49DC00CDADD6 /* Assets1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043D5E7235E49DC00CDADD6 /* Assets1.xcassets */; };
+		8043D5E8235E49DC00CDADD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8043D5E7235E49DC00CDADD6 /* Assets.xcassets */; };
+		8043D5EB235F5F5600CDADD6 /* Foodie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8043D5E9235F5F5600CDADD6 /* Foodie.xcdatamodeld */; };
+		8043D5F0235F5F8A00CDADD6 /* Restaurant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8043D5EE235F5F8A00CDADD6 /* Restaurant.xcdatamodeld */; };
+		8043D5F4235F5F9E00CDADD6 /* Review.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8043D5F2235F5F9E00CDADD6 /* Review.xcdatamodeld */; };
+		8043D5F7235F648100CDADD6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D5F6235F648100CDADD6 /* CoreDataStack.swift */; };
+		8043D5FB235F69C800CDADD6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D5FA235F69C800CDADD6 /* SignInViewController.swift */; };
+		8043D5FD235F69DF00CDADD6 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D5FC235F69DF00CDADD6 /* CreateAccountViewController.swift */; };
+		8043D5FF235F89B400CDADD6 /* SearchHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D5FE235F89B400CDADD6 /* SearchHomeViewController.swift */; };
+		8043D602235F8E6E00CDADD6 /* SearchHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D601235F8E6E00CDADD6 /* SearchHomeCollectionViewCell.swift */; };
+		8043D606235F8F0C00CDADD6 /* RestaurantProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D605235F8F0C00CDADD6 /* RestaurantProfileViewController.swift */; };
+		8043D608235F8F3A00CDADD6 /* RestaurantProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D607235F8F3A00CDADD6 /* RestaurantProfileTableViewCell.swift */; };
+		8043D60A235FA5C000CDADD6 /* restaurantTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D609235FA5C000CDADD6 /* restaurantTestModel.swift */; };
+		8043D60C235FA69E00CDADD6 /* restaurantModelControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D60B235FA69E00CDADD6 /* restaurantModelControllerTest.swift */; };
+		809BFD422360B6BF0031BAC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD412360B6BF0031BAC8 /* ProfileViewController.swift */; };
+		809BFD452360B6E30031BAC8 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD442360B6E30031BAC8 /* ProfileTableViewCell.swift */; };
+		809BFD482360C6D50031BAC8 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BFD472360C6D50031BAC8 /* Bearer.swift */; };
+		809BFD4A23613CC30031BAC8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 809BFD4923613CC30031BAC8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		318E2CC1152A8D99131AE4D8 /* Pods-FoodieFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodieFun.debug.xcconfig"; path = "Target Support Files/Pods-FoodieFun/Pods-FoodieFun.debug.xcconfig"; sourceTree = "<group>"; };
+		47DEF802B190D578642FE1B5 /* Pods_FoodieFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodieFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8043D564235E1B0300CDADD6 /* FoodieFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodieFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8043D567235E1B0300CDADD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8043D569235E1B0300CDADD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8043D56B235E1B0300CDADD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8043D56B235E1B0300CDADD6 /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 		8043D56E235E1B0300CDADD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8043D570235E1B0500CDADD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8043D573235E1B0500CDADD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8043D575235E1B0500CDADD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8043D5D5235E2EBA00CDADD6 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
@@ -35,7 +52,24 @@
 		8043D5D7235E2EBB00CDADD6 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		8043D5D8235E2EBB00CDADD6 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
 		8043D5D9235E2EBB00CDADD6 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
-		8043D5E7235E49DC00CDADD6 /* Assets1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets1.xcassets; path = ../../../../../../Downloads/Assets1.xcassets; sourceTree = "<group>"; };
+		8043D5E7235E49DC00CDADD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
+		8043D5EA235F5F5600CDADD6 /* Foodie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Foodie.xcdatamodel; sourceTree = "<group>"; };
+		8043D5EF235F5F8A00CDADD6 /* Restaurant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Restaurant.xcdatamodel; sourceTree = "<group>"; };
+		8043D5F3235F5F9E00CDADD6 /* Review.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Review.xcdatamodel; sourceTree = "<group>"; };
+		8043D5F6235F648100CDADD6 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8043D5FA235F69C800CDADD6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8043D5FC235F69DF00CDADD6 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		8043D5FE235F89B400CDADD6 /* SearchHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeViewController.swift; sourceTree = "<group>"; };
+		8043D601235F8E6E00CDADD6 /* SearchHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		8043D605235F8F0C00CDADD6 /* RestaurantProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantProfileViewController.swift; sourceTree = "<group>"; };
+		8043D607235F8F3A00CDADD6 /* RestaurantProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantProfileTableViewCell.swift; sourceTree = "<group>"; };
+		8043D609235FA5C000CDADD6 /* restaurantTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantTestModel.swift; sourceTree = "<group>"; };
+		8043D60B235FA69E00CDADD6 /* restaurantModelControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantModelControllerTest.swift; sourceTree = "<group>"; };
+		809BFD412360B6BF0031BAC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		809BFD442360B6E30031BAC8 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		809BFD472360C6D50031BAC8 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
+		809BFD4923613CC30031BAC8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A541A0CB9F3CA0FAC9E210AB /* Pods-FoodieFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodieFun.release.xcconfig"; path = "Target Support Files/Pods-FoodieFun/Pods-FoodieFun.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +77,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAC777DB10F60C15A101FBE /* Pods_FoodieFun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64B92955AEDF2C9B861C7239 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				318E2CC1152A8D99131AE4D8 /* Pods-FoodieFun.debug.xcconfig */,
+				A541A0CB9F3CA0FAC9E210AB /* Pods-FoodieFun.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8043D55B235E1B0300CDADD6 = {
 			isa = PBXGroup;
 			children = (
 				8043D566235E1B0300CDADD6 /* FoodieFun */,
 				8043D565235E1B0300CDADD6 /* Products */,
+				64B92955AEDF2C9B861C7239 /* Pods */,
+				A7608652169758C741D56D44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,13 +117,16 @@
 			children = (
 				8043D567235E1B0300CDADD6 /* AppDelegate.swift */,
 				8043D569235E1B0300CDADD6 /* SceneDelegate.swift */,
-				8043D56B235E1B0300CDADD6 /* ViewController.swift */,
+				8043D5F8235F693E00CDADD6 /* View Controllers */,
+				8043D603235F8E7500CDADD6 /* Views */,
+				8043D5EC235F5F5C00CDADD6 /* Models */,
+				8043D60D235FA6A300CDADD6 /* Model Controllers */,
 				8043D56D235E1B0300CDADD6 /* Main.storyboard */,
-				8043D5E7235E49DC00CDADD6 /* Assets1.xcassets */,
-				8043D570235E1B0500CDADD6 /* Assets.xcassets */,
+				8043D5E7235E49DC00CDADD6 /* Assets.xcassets */,
 				8043D5D4235E2EBA00CDADD6 /* Fonts */,
 				8043D572235E1B0500CDADD6 /* LaunchScreen.storyboard */,
 				8043D575235E1B0500CDADD6 /* Info.plist */,
+				809BFD4923613CC30031BAC8 /* GoogleService-Info.plist */,
 			);
 			path = FoodieFun;
 			sourceTree = "<group>";
@@ -93,6 +143,122 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		8043D5EC235F5F5C00CDADD6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8043D5ED235F5F6700CDADD6 /* Foodie Model */,
+				8043D5F1235F5F8F00CDADD6 /* Restaurant Model */,
+				8043D5F5235F5FA200CDADD6 /* Review Model */,
+				8043D5F6235F648100CDADD6 /* CoreDataStack.swift */,
+				8043D609235FA5C000CDADD6 /* restaurantTestModel.swift */,
+				809BFD472360C6D50031BAC8 /* Bearer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8043D5ED235F5F6700CDADD6 /* Foodie Model */ = {
+			isa = PBXGroup;
+			children = (
+				8043D5E9235F5F5600CDADD6 /* Foodie.xcdatamodeld */,
+			);
+			path = "Foodie Model";
+			sourceTree = "<group>";
+		};
+		8043D5F1235F5F8F00CDADD6 /* Restaurant Model */ = {
+			isa = PBXGroup;
+			children = (
+				8043D5EE235F5F8A00CDADD6 /* Restaurant.xcdatamodeld */,
+			);
+			path = "Restaurant Model";
+			sourceTree = "<group>";
+		};
+		8043D5F5235F5FA200CDADD6 /* Review Model */ = {
+			isa = PBXGroup;
+			children = (
+				8043D5F2235F5F9E00CDADD6 /* Review.xcdatamodeld */,
+			);
+			path = "Review Model";
+			sourceTree = "<group>";
+		};
+		8043D5F8235F693E00CDADD6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8043D5F9235F694D00CDADD6 /* SignIn */,
+				8043D600235F89BA00CDADD6 /* SearchTab */,
+				809BFD432360B6C40031BAC8 /* MeTab */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8043D5F9235F694D00CDADD6 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				8043D56B235E1B0300CDADD6 /* WelcomePageViewController.swift */,
+				8043D5FA235F69C800CDADD6 /* SignInViewController.swift */,
+				8043D5FC235F69DF00CDADD6 /* CreateAccountViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		8043D600235F89BA00CDADD6 /* SearchTab */ = {
+			isa = PBXGroup;
+			children = (
+				8043D5FE235F89B400CDADD6 /* SearchHomeViewController.swift */,
+				8043D605235F8F0C00CDADD6 /* RestaurantProfileViewController.swift */,
+			);
+			path = SearchTab;
+			sourceTree = "<group>";
+		};
+		8043D603235F8E7500CDADD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8043D604235F8E9C00CDADD6 /* SearchTab */,
+				809BFD462360B6E70031BAC8 /* MeTab */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8043D604235F8E9C00CDADD6 /* SearchTab */ = {
+			isa = PBXGroup;
+			children = (
+				8043D601235F8E6E00CDADD6 /* SearchHomeCollectionViewCell.swift */,
+				8043D607235F8F3A00CDADD6 /* RestaurantProfileTableViewCell.swift */,
+			);
+			path = SearchTab;
+			sourceTree = "<group>";
+		};
+		8043D60D235FA6A300CDADD6 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8043D60B235FA69E00CDADD6 /* restaurantModelControllerTest.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		809BFD432360B6C40031BAC8 /* MeTab */ = {
+			isa = PBXGroup;
+			children = (
+				809BFD412360B6BF0031BAC8 /* ProfileViewController.swift */,
+			);
+			path = MeTab;
+			sourceTree = "<group>";
+		};
+		809BFD462360B6E70031BAC8 /* MeTab */ = {
+			isa = PBXGroup;
+			children = (
+				809BFD442360B6E30031BAC8 /* ProfileTableViewCell.swift */,
+			);
+			path = MeTab;
+			sourceTree = "<group>";
+		};
+		A7608652169758C741D56D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47DEF802B190D578642FE1B5 /* Pods_FoodieFun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8043D578235E1B0500CDADD6 /* Build configuration list for PBXNativeTarget "FoodieFun" */;
 			buildPhases = (
+				13956CAF1D6D41C86A0EB9B8 /* [CP] Check Pods Manifest.lock */,
 				8043D560235E1B0300CDADD6 /* Sources */,
 				8043D561235E1B0300CDADD6 /* Frameworks */,
 				8043D562235E1B0300CDADD6 /* Resources */,
+				22BB301AC498242E1EF08410 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,7 +297,7 @@
 				};
 			};
 			buildConfigurationList = 8043D55F235E1B0300CDADD6 /* Build configuration list for PBXProject "FoodieFun" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -153,24 +321,81 @@
 			files = (
 				8043D5E0235E2EE100CDADD6 /* Lato-Italic.ttf in Resources */,
 				8043D5E3235E2EE900CDADD6 /* JosefinSans-Bold.ttf in Resources */,
+				809BFD4A23613CC30031BAC8 /* GoogleService-Info.plist in Resources */,
 				8043D574235E1B0500CDADD6 /* LaunchScreen.storyboard in Resources */,
-				8043D571235E1B0500CDADD6 /* Assets.xcassets in Resources */,
 				8043D5E1235E2EE400CDADD6 /* Lato-Light.ttf in Resources */,
 				8043D5E2235E2EE600CDADD6 /* Lato-Regular.ttf in Resources */,
 				8043D56F235E1B0300CDADD6 /* Main.storyboard in Resources */,
-				8043D5E8235E49DC00CDADD6 /* Assets1.xcassets in Resources */,
+				8043D5E8235E49DC00CDADD6 /* Assets.xcassets in Resources */,
 				8043D5DF235E2EDE00CDADD6 /* Lato-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13956CAF1D6D41C86A0EB9B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodieFun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22BB301AC498242E1EF08410 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodieFun/Pods-FoodieFun-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodieFun/Pods-FoodieFun-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodieFun/Pods-FoodieFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8043D560235E1B0300CDADD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8043D56C235E1B0300CDADD6 /* ViewController.swift in Sources */,
+				8043D5F7235F648100CDADD6 /* CoreDataStack.swift in Sources */,
+				8043D56C235E1B0300CDADD6 /* WelcomePageViewController.swift in Sources */,
+				809BFD482360C6D50031BAC8 /* Bearer.swift in Sources */,
+				8043D60A235FA5C000CDADD6 /* restaurantTestModel.swift in Sources */,
+				8043D5EB235F5F5600CDADD6 /* Foodie.xcdatamodeld in Sources */,
+				8043D5F0235F5F8A00CDADD6 /* Restaurant.xcdatamodeld in Sources */,
+				8043D5FB235F69C800CDADD6 /* SignInViewController.swift in Sources */,
+				809BFD422360B6BF0031BAC8 /* ProfileViewController.swift in Sources */,
+				8043D602235F8E6E00CDADD6 /* SearchHomeCollectionViewCell.swift in Sources */,
+				8043D5F4235F5F9E00CDADD6 /* Review.xcdatamodeld in Sources */,
+				8043D5FD235F69DF00CDADD6 /* CreateAccountViewController.swift in Sources */,
+				8043D60C235FA69E00CDADD6 /* restaurantModelControllerTest.swift in Sources */,
+				809BFD452360B6E30031BAC8 /* ProfileTableViewCell.swift in Sources */,
+				8043D608235F8F3A00CDADD6 /* RestaurantProfileTableViewCell.swift in Sources */,
+				8043D5FF235F89B400CDADD6 /* SearchHomeViewController.swift in Sources */,
+				8043D606235F8F0C00CDADD6 /* RestaurantProfileViewController.swift in Sources */,
 				8043D568235E1B0300CDADD6 /* AppDelegate.swift in Sources */,
 				8043D56A235E1B0300CDADD6 /* SceneDelegate.swift in Sources */,
 			);
@@ -314,15 +539,17 @@
 		};
 		8043D579235E1B0500CDADD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 318E2CC1152A8D99131AE4D8 /* Pods-FoodieFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = FoodieFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.FoodieFun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.FoodieFun1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,15 +558,17 @@
 		};
 		8043D57A235E1B0500CDADD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A541A0CB9F3CA0FAC9E210AB /* Pods-FoodieFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
 				INFOPLIST_FILE = FoodieFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.FoodieFun;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.FoodieFun1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -368,6 +597,39 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8043D5E9235F5F5600CDADD6 /* Foodie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8043D5EA235F5F5600CDADD6 /* Foodie.xcdatamodel */,
+			);
+			currentVersion = 8043D5EA235F5F5600CDADD6 /* Foodie.xcdatamodel */;
+			path = Foodie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		8043D5EE235F5F8A00CDADD6 /* Restaurant.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8043D5EF235F5F8A00CDADD6 /* Restaurant.xcdatamodel */,
+			);
+			currentVersion = 8043D5EF235F5F8A00CDADD6 /* Restaurant.xcdatamodel */;
+			path = Restaurant.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		8043D5F2235F5F9E00CDADD6 /* Review.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8043D5F3235F5F9E00CDADD6 /* Review.xcdatamodel */,
+			);
+			currentVersion = 8043D5F3235F5F9E00CDADD6 /* Review.xcdatamodel */;
+			path = Review.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8043D55C235E1B0300CDADD6 /* Project object */;
 }
