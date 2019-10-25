@@ -45,20 +45,20 @@ class CoreDataStack {
         restaurantContainer.viewContext
     }
     
-    lazy var ReviewContainer: NSPersistentContainer = {
+    lazy var reviewContainer: NSPersistentContainer = {
         
-        let ReviewContainer = NSPersistentContainer(name: "Review")
-        ReviewContainer.loadPersistentStores { (_, error) in
+        let reviewContainer = NSPersistentContainer(name: "Review")
+        reviewContainer.loadPersistentStores { (_, error) in
             if let error = error {
                 fatalError("Failed to load persistent stores: \(error)")
             }
         }
-        ReviewContainer.viewContext.automaticallyMergesChangesFromParent = true
-        return ReviewContainer
+        reviewContainer.viewContext.automaticallyMergesChangesFromParent = true
+        return reviewContainer
     }()
     
     var reviewMainContext: NSManagedObjectContext {
-        ReviewContainer.viewContext
+        reviewContainer.viewContext
     }
     
     func save(context: NSManagedObjectContext) {

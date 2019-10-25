@@ -94,17 +94,17 @@
             <objects>
                 <viewController id="TZ2-I5-qSH" customClass="SearchHomeViewController" customModule="FoodieFun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XZ0-E5-MfA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended Near You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0z-Qw-b5P">
-                                <rect key="frame" x="20" y="172" width="374" height="30"/>
+                                <rect key="frame" x="20" y="216" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.99215686274509807" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" placeholder="Search For A Restaurant" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62s-6C-PpO">
-                                <rect key="frame" x="20" y="100" width="374" height="56"/>
+                                <rect key="frame" x="20" y="144" width="374" height="56"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="organization"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U10-Vz-CVM">
@@ -239,6 +239,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="beu-89-7dg" kind="show" id="nae-Ac-PhJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -246,18 +249,28 @@
                                     <outlet property="delegate" destination="BF7-4e-yDo" id="sc8-jb-MIQ"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYY-np-NDg">
+                                <rect key="frame" x="318" y="44" width="76" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="5Qe-hI-a8i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19215686269999999" green="0.18823529410000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ZQo-6Z-Y9b" firstAttribute="trailing" secondItem="BFB-8C-9Go" secondAttribute="trailing" constant="98" id="9rZ-ck-6sQ"/>
                             <constraint firstItem="GrB-sz-fMh" firstAttribute="top" secondItem="ZQo-6Z-Y9b" secondAttribute="top" constant="20" id="EFy-LY-MsR"/>
                             <constraint firstItem="BFB-8C-9Go" firstAttribute="top" secondItem="ZQo-6Z-Y9b" secondAttribute="top" constant="57" id="EUw-Xc-KrO"/>
+                            <constraint firstItem="aYY-np-NDg" firstAttribute="top" secondItem="ZQo-6Z-Y9b" secondAttribute="top" id="Hfy-In-Ndb"/>
                             <constraint firstItem="hVU-Cj-7KL" firstAttribute="trailing" secondItem="BFB-8C-9Go" secondAttribute="trailing" id="Lw6-xJ-C1C"/>
                             <constraint firstItem="ZQo-6Z-Y9b" firstAttribute="trailing" secondItem="qeY-ey-sNV" secondAttribute="trailing" constant="20" id="MGg-Yl-Bjq"/>
                             <constraint firstItem="BFB-8C-9Go" firstAttribute="leading" secondItem="GrB-sz-fMh" secondAttribute="trailing" constant="8" id="Q0j-Dw-3Ls"/>
                             <constraint firstItem="GrB-sz-fMh" firstAttribute="leading" secondItem="ZQo-6Z-Y9b" secondAttribute="leading" constant="20" id="R1g-kU-cvU"/>
                             <constraint firstItem="hVU-Cj-7KL" firstAttribute="leading" secondItem="BFB-8C-9Go" secondAttribute="leading" id="TE0-6X-aUn"/>
                             <constraint firstItem="hVU-Cj-7KL" firstAttribute="top" secondItem="BFB-8C-9Go" secondAttribute="bottom" constant="1" id="Too-Xi-kZ8"/>
+                            <constraint firstItem="ZQo-6Z-Y9b" firstAttribute="trailing" secondItem="aYY-np-NDg" secondAttribute="trailing" constant="20" id="WaC-oS-QmH"/>
                             <constraint firstItem="qeY-ey-sNV" firstAttribute="top" secondItem="GrB-sz-fMh" secondAttribute="bottom" constant="8" id="cJL-qx-Rjp"/>
                             <constraint firstItem="qeY-ey-sNV" firstAttribute="leading" secondItem="ZQo-6Z-Y9b" secondAttribute="leading" constant="20" id="fot-cX-Ioe"/>
                             <constraint firstItem="qeY-ey-sNV" firstAttribute="bottom" secondItem="ZQo-6Z-Y9b" secondAttribute="bottom" id="vRM-oT-D6o"/>
@@ -480,21 +493,21 @@
                                 <color key="textColor" red="1" green="0.99215686274509807" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="83k-Ee-beO">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="83k-Ee-beO">
                                 <rect key="frame" x="20" y="172" width="76" height="18.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SadFace" translatesAutoresizingMaskIntoConstraints="NO" id="I0l-ju-HIc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SadFace" translatesAutoresizingMaskIntoConstraints="NO" id="I0l-ju-HIc">
                                         <rect key="frame" x="0.0" y="0.0" width="18.5" height="18.5"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="NeutralFace" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-rV-KQD">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NeutralFace" translatesAutoresizingMaskIntoConstraints="NO" id="Tmh-rV-KQD">
                                         <rect key="frame" x="28.5" y="0.0" width="19" height="18.5"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="HappyFace" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-89-vHj">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HappyFace" translatesAutoresizingMaskIntoConstraints="NO" id="ZBB-89-vHj">
                                         <rect key="frame" x="57.5" y="0.0" width="18.5" height="18.5"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="86 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bo-aY-5Sv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="86 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bo-aY-5Sv">
                                 <rect key="frame" x="116" y="172" width="85.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.99215686270000003" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -525,7 +538,7 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bMu-Mb-Rhr">
                                 <rect key="frame" x="20" y="525" width="374" height="283"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.18823529410000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuInfo" id="cbj-PN-xfV" customClass="RestaurantProfileTableViewCell" customModule="FoodieFun" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
@@ -883,6 +896,8 @@
         <image name="sad" width="120" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DrC-zf-meS"/>
+        <segue reference="nae-Ac-PhJ"/>
+        <segue reference="Jsd-7D-H4I"/>
+        <segue reference="URC-S5-NOv"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -32,21 +32,11 @@ enum HeaderNames: String {
 class RestaurantControllerTest {
     
     // MARK: - Properties
-    // TODO: - ADD URL
-    private let apiKey = "5At6R1sT1HctQW0PSJ3Pl2EcIWPfH4RAMZozuXWLbm7-z_tqYODpFJOiGWd2XoUEn94N1QM4GCNOZ5hX4PM38ehEAf2gsqLQtp4QczfUZmCOJQm3lnVJ4B1UjUaxXXYx"
-    //private let baseURL = URL(string: "")!
     
-    
-    // SIGNUP
-    func signUp(with foodie: Foodie, completion: @escaping (Error?) -> ()) {
-        
-        
-    }
-    
-//    var restaurants: [Restaurant] = [Restaurant(name: "Cheesecake Factory", imageName: "foodItem", foodItem: "Beef Plate"),
-//                                     Restaurant(name: "Merriman's", imageName: "foodItem1", foodItem: "Shrimp Scampi"),
-//                                     Restaurant(name: "Mi's", imageName: "foodItem2", foodItem: "Steak"),
-//                                     Restaurant(name: "Papa Kona", imageName: "foodItem3", foodItem: "Panini")]
+    var restaurantsTest: [RestaurantTest] = [RestaurantTest(name: "Cheesecake Factory", imageName: "foodItem", foodItem: "Beef Plate"),
+                                     RestaurantTest(name: "Merriman's", imageName: "foodItem1", foodItem: "Shrimp Scampi"),
+                                     RestaurantTest(name: "Mi's", imageName: "foodItem2", foodItem: "Steak"),
+                                     RestaurantTest(name: "Papa Kona", imageName: "foodItem3", foodItem: "Panini")]
     
     
     
